@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Cloud</title>
+</head>
+
+<body>
+    <button class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </button>
+    <nav class="navigation">
+        <p class="navigation__text">Navigate to</p>
+        <button class="navigation__close">
+            <span class="navigation__icon--close">&nbsp;</span>
+        </button>
+        <ul class="navigation__list">
+           <li class="navigation__item"><a href="#home" class="navigation__links">Home</a></li> 
+           <li class="navigation__item"><a href="#features" class="navigation__links">Features</a></li> 
+           <li class="navigation__item"><a href="#testimonials" class="navigation__links">Testimonials</a></li> 
+           <li class="navigation__item"><a href="#pricing" class="navigation__links">Pricing</a></li> 
+           <li class="navigation__item"><a href="#download" class="navigation__links">Download</a></li>
+        </ul>
+        <ul class="social__list">
+            <li class="social__item"><ion-icon name="logo-facebook"></ion-icon></li>
+            <li class="social__item"><ion-icon name="logo-twitter"></ion-icon></li>
+            <li class="social__item"><ion-icon name="logo-instagram"></ion-icon></li>
+            </li>
+        </ul>
+    </nav>
+    <!-- HEADER SECTION -->
+    <section class="header" id="home">
+        <div class="header__logo-container">
+            <img src="img/logo.png" alt="LOGO" class="header__logo-img">
+        </div>
+        <a href="#features" class="header__btn-link header__btn--knowmore">Know more</a>
+        <!-- <button class="header__btn header__btn--knowmore"><a href="#" class="header__btn-link"> Know More</a></button> -->
+        
+        <div class="header__heading-container">
+            <h1 class="heading-primary margin-btm--md">Get live weather <br> updates</h1>
+            <a href="#" class="header__btn-link header__btn--android">
+                <ion-icon name="logo-apple"></ion-icon>
+                &nbsp; Download
+            </a>
+            <a href="#" class="header__btn-link header__btn--ios">
+                <ion-icon name="logo-google-playstore"></ion-icon>
+                &nbsp; Download
+            </a>
+        </div>
+        <img src="img/hero-phone.png" alt="Weather App" class="header__phone-img">
+    </section>
+
+    <!-- FEATURE SECTION -->
+    <section class="feature_section">
+        <div class="u-text-center">
+            <h2 class="heading-secondary" id="features">Features</h2>
+        </div>
+        <div class="feature row">
+            <div class="feature__box col-sm">
+                <ion-icon name="notifications-outline" class="feature__icon"></ion-icon>
+                <h2 class="feature__heading">In-app notifications</h2>
+                <p class="feature__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi
+                    dolorem in, quas odit, consequuntur repellendus.</p>
+            </div>
+            <div class="feature__box col-sm">
+                <ion-icon name="cloud-outline" class="feature__icon"></ion-icon>
+                <h2 class="feature__heading">Climate map</h2>
+                <p class="feature__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi
+                    dolorem in, quas odit, consequuntur repellendus.</p>
+            </div>
+            <div class="feature__box col-md">
+                <ion-icon name="umbrella-outline" class="feature__icon"></ion-icon>
+                <h2 class="feature__heading">Accurate Predictions</h2>
+                <p class="feature__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi
+                    dolorem in, quas odit, consequuntur repellendus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="custom-shape-divider-top-1594810152">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="u-text-center pd-top-md">
+            <h2 class="heading-secondary testimonials__heading" id="testimonials">Testimonials</h2>
+        </div>
+
+        <div id="carousel-testimonials" class="carousel-container carousel slide" data-ride="carousel"
+            data-interval="5000">
+            <div class="carousel-inner testimonials__container">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-item active">
+                    <h2 class="testimonials__text">Well layed out. Provided most info in the home screen without my
+                        having to dig. Good selection of widgets.</h2>
+                    <img class="testimonials__img" src="img/test-1.jpg" alt="testimonial user photo">
+                    <em>Beverly Samson, Illinois</em>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testimonials__text">Beautiful UI. Outstanding UX. With Dark Sky gone, this is my new
+                        favorite and go-to weather app.</h2>
+                    <img class="testimonials__img" src="img/test-2.jpg" alt="testimonial user photo">
+                    <em>Paul Morrison, London</em>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testimonials__text">Very detailed, looks are appealing. I just got it downloaded a few
+                        days ago so hoping to also find it to be accurate.</h2>
+                    <img class="testimonials__img" src="img/test-3.jpg" alt="testimonial user photo">
+                    <em>Wanda Austin, New York</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-testimonials" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-testimonials" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="custom-shape-divider-bottom-1594881964">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="u-text-center margin-btm--sm">
+            <h2 class="heading-secondary" id="pricing">Pricing</h2>
+        </div>
+        <div class="pricing__container row">
+            <div class="card col-md">
+                <div class="card__side card__side--front card__side--front--p2">
+                    <h2 class="card__heading">Free</h2>
+                    <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                        laboriosam quibusdam facilis.</p>
+                    <button class="card__button">Know More</button>
+                </div>
+                <div class="card__side card__side--back">
+                    <ul class="card__list">
+                        <li class="card__feature">Live weather</li>
+                        <li class="card__feature">Accurate Results</li>
+                        <li class="card__feature">Beautiful Design</li>
+                        <li class="card__feature">Humidity level</li>
+                    </ul>
+                    <button class="card__button card__button--back card__button--back--p1"
+                        type="button">Download</button>
+                </div>
+            </div>
+            <div class="card col-md">
+                <div class="card__side card__side--front card__side--front--p1">
+                    <h2 class="card__heading">Premium</h2>
+                    <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                        laboriosam quibusdam facilis.</p>
+                    <button class="card__button">Know More</button>
+                </div>
+                <div class="card__side card__side--back">
+                    <ul class="card__list">
+                        <li class="card__feature">Ad-Free</li>
+                        <li class="card__feature">Scheduled Updates</li>
+                        <li class="card__feature">Rain Alert</li>
+                        <li class="card__feature">Morning Alerts</li>
+                        <li class="card__feature">Winter Alerts</li>
+
+                    </ul>
+                    <button class="card__button card__button--back card__button--back--p2">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download-section"  id="download">
+        <div class="custom-shape-divider-top-1594887652">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <h1 class="heading-primary margin-btm--md">Get live weather updates</h1>
+        
+        <a href="#" class="header__btn-link header__btn--android dwn-btn--item">
+            <ion-icon name="logo-apple" size="large"></ion-icon>
+            &nbsp; Download
+        </a>
+        <a href="#" class="header__btn-link header__btn--ios dwn-btn--item">
+            <ion-icon name="logo-google-playstore" size="large"></ion-icon>
+            &nbsp; Download
+        </a>
+        
+      
+    </section>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo.png" alt="logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <p class="footer__copyright">
+                    <a href="#" class="footer__link" style="color:#e80e0e; font-weight: 700;">Made with Chili.</a>&nbsp;
+                    Copyright © by <a href="#" class="footer__link">Harsh Kalani.</a> All rights reserved.<br><a
+                        href="#" class="footer__link" style="text-transform: lowercase;">wadecodes@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
